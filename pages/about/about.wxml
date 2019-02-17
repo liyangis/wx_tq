@@ -1,0 +1,17 @@
+<!--pages/about/about.wxml-->
+<map id="map" longitude="{{lon}}" latitude="{{lat}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+<view>
+  <view class='pro'>
+    <text>产品名称: {{title}}</text>
+    <text>数据来源: {{source}}</text>
+    <text>启动时间: {{time}}</text>
+  </view>
+  <view class='list'>
+    <text class='title'>作者</text>
+    <text class='info'>{{name}}</text>
+    <text class='title'>邮箱</text>
+    <text class='info'>{{email}}</text>
+    <text class='title'>微信</text>
+    <text class='info'>{{webchart}}</text>
+  </view>
+</view>

@@ -1,0 +1,172 @@
+/* pages/weather/weather.wxss */
+
+.city {
+  padding: 3% 1%;
+  background: #ddd;
+}
+
+.city text {
+  font-size: 16px;
+  color: #666;
+}
+
+.city .cityImg {
+  width: 30rpx;
+  height: 30rpx;
+  float: left;
+  margin: 5px;
+}
+
+.city .update {
+  font-size: 12px;
+  float: right;
+  width: 110px;
+  line-height: 30px;
+}
+
+.city .now {
+  font-size: 12px;
+  color: #666;
+  float: right;
+}
+
+.nowImg {
+  width: 30rpx;
+  height: 30rpx;
+  float: right;
+  margin: 8px 5px;
+}
+
+.weather {
+  background: #cef;
+  color: #58b;
+  padding: 3% 5%;
+}
+
+.weather .section {
+  float: left;
+  width: 100px;
+  height: 100px;
+  display: block;
+  text-align: center;
+  line-height: 100px;
+}
+
+.weather .aside {
+  float: right;
+  width: 40%;
+  margin-top: 5%;
+  font-size: 12px;
+}
+
+.weather .aside .temprature {
+  display: block;
+  font-size: 36px;
+}
+
+.weather .other {
+  display: flex;
+  text-align: center;
+  clear: both;
+}
+
+.weather .other view {
+  flex: 1;
+  text-align: center;
+}
+
+.weather .other .border_r {
+  border-right: solid 1px #bbd;
+}
+
+.weather .other .title {
+  font-size: 12px;
+  color: #bbd;
+}
+
+.weather .other .info {
+  display: block;
+  padding-top: 5%;
+}
+
+.air {
+  margin-top: 2%;
+  background: #cef;
+
+}
+
+.air .air_title {
+  color: #fff;
+  background: #58b;
+  display: block;
+  padding: 3% 5%;
+  font-size: 14px;
+}
+
+.air .air_list {
+  display: flex;
+  text-align: center;
+  clear: both;
+  color: #58b;
+}
+
+.air .air_list view {
+  flex: 1;
+  margin-top: 2%;
+}
+
+.air .border_r {
+  border-right: solid 1px #bbd;
+}
+
+.air .air_list .title {
+  display: block;
+  font-size: 12px;
+  color: #bbd;
+}
+
+.suggestion {
+  margin-top: 2%;
+}
+
+.suggestion .title {
+  color: #fff;
+  display: block;
+  background: #58b;
+  padding: 3% 5%;
+}
+
+.suggestion .list {
+  display: flex;
+  margin-top: 1px;
+  font-size: 12px;
+}
+
+.suggestion .list_l {
+  flex: 1;
+  text-align: center;
+  background: #cef;
+  color: #bbd;
+  padding: 8px;
+}
+
+.suggestion .list_l image {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+.suggestion .list_r {
+  flex: 4;
+  background: #eee;
+  padding: 8px;
+  color: #aaa;
+}
+
+.suggestion .list_t {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}

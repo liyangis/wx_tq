@@ -1,0 +1,125 @@
+<!--pages/weather/weather.wxml-->
+<!-- <text>pages/weather/weather.wxml</text> -->
+<view class='container'>
+  <view class='city' bindtap='bindViewTap'>
+    <image class='cityImg' src='../../images/curcity.png'></image>
+    <text>当前城市：{{basic.location}}</text>
+    <text class='update'>{{basic.update.loc}}</text>
+    <image class='nowImg' src='../../images/update.png'></image>
+  </view>
+  <view class='weather' bindtap='showcurid'>
+    <image class='section' src='{{now.cond_src}}'></image>
+    <!-- <text class='section'>{{now.cond_txt}}</text> -->
+    <view class='aside'>
+      <text class='temprature'>{{now.tmp}}℃</text>
+      <text>{{now.cond_txt}} | {{now.wind.dir}} {{now.wind.sc}}级</text>
+    </view>
+    <view class='other'>
+      <view class='border_r'>
+        <text class='title'>相对湿度</text>
+        <text class='info'>{{now.hum}}%</text>
+      </view>
+      <view class='border_r'>
+        <text class='title'>降水量</text>
+        <text class='info'>{{now.pcpn}}mm</text>
+      </view>
+      <view>
+        <text class='title'>能见度</text>
+        <text class='info'>{{now.vis}}km</text>
+      </view>
+    </view>
+  </view>
+  <view class='air'>
+    <text class='air_title'>空气质量</text>
+    <view class='air_list'>
+      <view class='border_r'>
+        <text class='title'>空气质量</text>
+        <text>{{air.qlty}}</text>
+      </view>
+      <view class='border_r'>
+        <text class='title'>AQI</text>
+        <text>{{air.aqi}}</text>
+      </view>
+      <view class='border_r'>
+        <text class='title'>PM2.5</text>
+        <text>{{air.pm25}}</text>
+      </view>
+      <view class='border_r'>
+        <text class='title'>CO</text>
+        <text>{{air.co}}</text>
+      </view>
+      <view class='border_r'>
+        <text class='title'>NO2</text>
+        <text>{{air.no2}}</text>
+      </view>
+      <view>
+        <text class='title'>SO2</text>
+        <text>{{air.so2}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='suggestion'>
+    <text class='title'>生活指数</text>
+    <view class='list'>
+      <view class='list_l'>
+        <image class='' src='../../images/icon/comf.png'></image>
+        <text>舒适度指数</text>
+      </view>
+      <view class='list_r'>
+        <text class='list_t'>{{suggestion[0].brf}}</text>
+        <text>{{suggestion[0].txt}}</text>
+      </view>
+    </view>
+    <view class='list'>
+      <view class='list_l'>
+        <image class='' src='../../images/icon/cw.png'></image>
+        <text>洗车指数</text>
+      </view>
+      <view class='list_r'>
+        <text class='list_t'>{{suggestion[6].brf}}</text>
+        <text>{{suggestion[6].txt}}</text>
+      </view>
+    </view>
+    <view class='list'>
+      <view class='list_l'>
+        <image class='' src='../../images/icon/drsg.png'></image>
+        <text>穿衣指数</text>
+      </view>
+      <view class='list_r'>
+        <text class='list_t'>{{suggestion[1].brf}}</text>
+        <text>{{suggestion[1].txt}}</text>
+      </view>
+    </view>
+    <view class='list'>
+      <view class='list_l'>
+        <image class='' src='../../images/icon/flu.png'></image>
+        <text>感冒指数</text>
+      </view>
+      <view class='list_r'>
+        <text class='list_t'>{{suggestion[2].brf}}</text>
+        <text>{{suggestion[2].txt}}</text>
+      </view>
+    </view>
+    <view class='list'>
+      <view class='list_l'>
+        <image class='' src='../../images/icon/sport.png'></image>
+        <text>运动指数</text>
+      </view>
+      <view class='list_r'>
+        <text class='list_t'>{{suggestion[3].brf}}</text>
+        <text>{{suggestion[3].txt}}</text>
+      </view>
+    </view>
+    <view class='list'>
+      <view class='list_l'>
+        <image class='' src='../../images/icon/trav.png'></image>
+        <text>旅游指数</text>
+      </view>
+      <view class='list_r'>
+        <text class='list_t'>{{suggestion[4].brf}}</text>
+        <text>{{suggestion[4].txt}}</text>
+      </view>
+    </view>
+  </view>
+
+</view>
